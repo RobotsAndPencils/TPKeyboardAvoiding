@@ -43,7 +43,8 @@
 
 -(void)setContentSize:(CGSize)contentSize {
     [super setContentSize:contentSize];
-    [self TPKeyboardAvoiding_updateFromContentSizeChange];
+    // Temporary fix for AutoLayout bounds issue with resizing UITextViews to fit their content
+    // [self TPKeyboardAvoiding_updateFromContentSizeChange];
 }
 
 - (void)contentSizeToFit {
